@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,12 +18,38 @@
       justify-content: center;
     }
 
+    /* App Icon Styling */
+    .app-icon {
+      width: 128px;
+      height: 128px;
+      border-radius: 28px;
+      object-fit: cover;
+      margin: 0 auto 1rem auto;
+      /* horizontally center with auto margins */
+      display: block;
+      /* required for auto margins to work */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 600px) {
+      .app-icon {
+        width: 96px;
+        height: 96px;
+      }
+    }
+
     .container {
       max-width: 700px;
       background: white;
       border-radius: 16px;
       padding: 2rem;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      /* center all child elements horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      /* all text centered by default */
     }
 
     h1 {
@@ -60,33 +87,23 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
     <!-- 👇 App Icon -->
     <img src="app-icon.png" alt="Audio Maths Icon" class="app-icon" />
-    
+
     <h1>Audio Maths Support</h1>
-    <p>Welcome! We’re here to help you with any questions, issues, or feedback about <strong>Audio Maths</strong>.</p>
+    <p>Welcome! Thank you for using Audio Maths! If you’re having any questions, issues, feedback or found a bug, please
+      reach out: </p>
 
-    <h2>Contact Support</h2>
-    <p>If you’re having trouble or found a bug, please reach out:</p>
     <a href="mailto:pilotapps.help@gmail.com" class="button">Email Support</a>
-
-    <!-- <h2>FAQs</h2>
-    <p><strong>Q:</strong> How do I reset my data?<br>
-       <strong>A:</strong> Tap “Settings” → “Reset” inside the app to start fresh.
-    </p>
-
-    <p><strong>Q:</strong> I found a bug! What should I do?<br>
-       <strong>A:</strong> Email us with a short description and, if possible, a screenshot.</p> -->
-
-    <!-- <h2>More Info</h2>
-    <a href="https://apps.apple.com/app/idYOURAPPID" class="button secondary">View on App Store</a> -->
 
     <footer>
       <p>© 2025 Felix Desiderato. All rights reserved.</p>
     </footer>
   </div>
 </body>
+
 </html>
