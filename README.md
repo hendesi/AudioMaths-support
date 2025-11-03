@@ -1,2 +1,2 @@
-# AudioMaths-support
-Hosting a support website for the Audio Maths iOS app
+# PilotApps-support
+Support website for the Audio Maths app and the Triangle Test app.
