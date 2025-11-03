@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="app-icon.png" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <title>Audio Maths Support</title>
+  <title>PilotApps Support</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
@@ -24,11 +24,17 @@
       height: 128px;
       border-radius: 28px;
       object-fit: cover;
-      margin: 0 auto 1rem auto;
-      /* horizontally center with auto margins */
+      margin: 0;
       display: block;
-      /* required for auto margins to work */
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .app-icons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
     }
 
     @media (max-width: 600px) {
@@ -44,7 +50,7 @@
       border-radius: 16px;
       padding: 2rem;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      /* center all child elements horizontally */
+    /* center all child elements horizontally */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -86,25 +92,38 @@
       color: #666;
       margin-top: 2rem;
     }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <!-- 👇 App Icon -->
-    <img src="app-icon.png" alt="Audio Maths Icon" class="app-icon" />
+    <!-- 👇 App Icons -->
+    <div class="app-icons" aria-label="PilotApps iOS apps">
+      <img src="app-icon.png" alt="Audio Maths App Icon" title="Audio Maths" class="app-icon" />
+      <img src="triangle-test-icon.png" alt="Triangle Test App Icon" title="Triangle Test" class="app-icon" />
+    </div>
 
-    <h1>Audio Maths Support</h1>
-    <p>Welcome! Thank you for using Audio Maths! If you’re having any questions, issues, feedback or found a bug, please
-      reach out: </p>
+    <h1>Support</h1>
+    <p>Welcome! This is the support page for <strong>Triangle Test</strong> and <strong>Audio Maths</strong>. If you have questions, issues, feedback, or found a bug, please
+      reach out:</p>
 
     <a href="mailto:pilotapps.help@gmail.com" class="button">Email Support</a>
 
     
 
     <footer>
-      <a href="privacy.html" class="button secondary">Privacy Policy</a>
+      <div class="footer-links">
+        <a href="audioMaths-privacy.html" class="button secondary">Audio Maths Privacy Policy</a>
+        <a href="triangleTest-privacy.html" class="button secondary">Triangle Test Privacy Policy</a>
+      </div>
       <p>© 2025 Felix Desiderato. All rights reserved.</p>
     </footer>
   </div>
